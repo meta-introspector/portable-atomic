@@ -2,7 +2,7 @@
 name = "no-std-qemu-test"
 version = "0.0.0"
 edition = "2021"
-rust-version = "1.64" # Prevent clippy from suggesting a code that requires a new version.
+# rust-version = "1.64" # Prevent clippy from suggesting a code that requires a new version.
 publish = false
 
 [dependencies]
@@ -15,8 +15,8 @@ semihosting-no-std-test-rt = { features = ["qemu-system"], git = "https://github
 [lints]
 workspace = true
 
-[workspace]
-resolver = "2"
+#[workspace]
+#resolver = "2"
 
 # This table is shared by projects under github.com/taiki-e.
 # Expect for unexpected_cfgs.check-cfg, it is not intended for manual editing.
